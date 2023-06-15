@@ -24,7 +24,7 @@ public class Main {
             System.out.println("problem in URL");
         }
 
-        //connection
+       
 
         try {
             connection = (HttpURLConnection) url.openConnection();
@@ -33,7 +33,7 @@ public class Main {
             System.out.println("connection problem");
         }
 
-        //extract information from the connection object:
+        
 
         if(responseCode == 200)
         {
@@ -46,7 +46,7 @@ public class Main {
                 apiData.append(readLine);
             }
 
-            //
+           
             try {
                 in.close();
             } catch (IOException e) {
